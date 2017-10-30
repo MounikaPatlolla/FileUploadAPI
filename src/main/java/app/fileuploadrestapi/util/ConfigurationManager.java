@@ -13,9 +13,9 @@ import org.apache.commons.lang.SystemUtils;
 /**
  * Loads and provides access to the properties from the property file.
  * 
- * @author Vamshi Reddy
+ * @author Mounika Reddy
  * @version 1.0
- * @since 10/28/2017
+ * @since 10/29/2017
  */
 public class ConfigurationManager {
 	private static ConfigurationManager defaultInstance;
