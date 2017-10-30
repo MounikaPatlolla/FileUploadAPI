@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>File Upload API</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+</head>
+
+<body>
+	<div class="container">
+		<form class="form-horizontal" method="POST"
+			enctype="multipart/form-data" id="fileUploadForm">
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="fileUploading">Upload
+					File:</label>
+				<div class="col-sm-5">
+					<input type="file" class="form-control" name="fileUploading"
+						placeholder="Upload File"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default" id="Submit">Upload</button>
+					<button type="submit" class="btn btn-default" id="GetFiles">Uploaded
+						Files</button>
+				</div>
+			</div>
+		</form>
+		<hr />
+		<div class="col-sm-offset-2" id="result"></div>
+	</div>
+	<!-- jQuery library -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/js/postfile.js"></script>
+	<script src="/js/getfiles.js"></script>
+</body>
+</html>
